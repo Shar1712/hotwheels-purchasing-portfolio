@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Cars | Hot Wheels Garage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">HOT WHEELS 🏁</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="shop.html">Shop Cars</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="signin.html">Sign In</a></li>
+                <li class="nav-item"><a class="nav-link" href="signup.html">Sign Up</a></li>
+                <li class="nav-item ms-lg-2"><a class="btn btn-hot" href="cart.html">Cart (<span class="cart-count">0</span>)</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="page-head text-center">
+    <div class="container">
+        <p class="tag">THE COLLECTION</p>
+        <h1>SHOP THE CARS</h1>
+        <p class="muted">Find the perfect car for your mini garage.</p>
+    </div>
+</header>
+
+<main class="container py-5">
+    <input type="search" id="productSearch" class="form-control mb-4"
+           placeholder="Search cars by name...">
+
+    <div class="d-flex flex-wrap gap-2 mb-4">
+        <button class="btn btn-outline-hot filter-btn active" data-category="All">All Cars</button>
+        <button class="btn btn-outline-hot filter-btn" data-category="Sports">Sports</button>
+        <button class="btn btn-outline-hot filter-btn" data-category="Classic">Classic</button>
+        <button class="btn btn-outline-hot filter-btn" data-category="Racing">Racing</button>
+    </div>
+
+    <div class="row g-4" id="productGrid"></div>
+</main>
+
+<footer class="footer">
+    <p>HOT WHEELS GARAGE 🏁</p>
+    <small>Student demonstration project. Not an official Hot Wheels store.</small>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

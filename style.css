@@ -1,0 +1,249 @@
+:root {
+    --background: #101010;
+    --panel: #202020;
+    --red: #ed1c24;
+    --yellow: #ffcc00;
+    --white: #ffffff;
+    --muted: #bdbdbd;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    background: #050505;
+    padding: 15px 0;
+    border-bottom: 3px solid var(--red);
+}
+
+.navbar-brand {
+    color: var(--yellow) !important;
+    font-size: 23px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.nav-link {
+    color: white !important;
+    margin: 0 5px;
+}
+
+.nav-link:hover {
+    color: var(--yellow) !important;
+}
+
+.btn-hot {
+    background: var(--red);
+    color: white;
+    border: 1px solid var(--red);
+    font-weight: bold;
+    padding: 10px 18px;
+}
+
+.btn-hot:hover {
+    background: #bd1018;
+    border-color: #bd1018;
+    color: white;
+}
+
+.btn-outline-hot {
+    color: white;
+    border: 1px solid #666;
+}
+
+.btn-outline-hot:hover,
+.btn-outline-hot.active {
+    background: var(--yellow);
+    border-color: var(--yellow);
+    color: #111;
+}
+
+.hero {
+    padding: 65px 0;
+    background:
+        radial-gradient(circle at 80% 20%, #571111, transparent 40%),
+        linear-gradient(120deg, #202020, #080808);
+    border-bottom: 1px solid #333;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 76px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1;
+}
+
+.hero h1 span {
+    color: var(--yellow);
+}
+
+.hero-image {
+    width: 100%;
+    max-height: 380px;
+    object-fit: contain;
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.tag {
+    color: var(--yellow);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.muted,
+.small-note {
+    color: var(--muted);
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    border-left: 5px solid var(--red);
+    padding-left: 12px;
+    margin-bottom: 25px;
+}
+
+.page-head {
+    padding: 45px 15px;
+    background: linear-gradient(110deg, #8d0000, #ed1c24);
+}
+
+.page-head h1 {
+    font-size: clamp(30px, 5vw, 48px);
+    font-weight: 900;
+    font-style: italic;
+}
+
+.product-card {
+    height: 100%;
+    background: var(--panel);
+    border: 1px solid #383838;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.25s, border-color 0.25s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--yellow);
+}
+
+.product-image {
+    height: 260px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.product-details {
+    padding: 18px;
+}
+
+.product-details h5 {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.price {
+    color: var(--yellow);
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.content-panel {
+    background: var(--panel);
+    border: 1px solid #383838;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.form-control {
+    background: #151515;
+    border: 1px solid #555;
+    color: white;
+    padding: 12px;
+}
+
+.form-control:focus {
+    background: #151515;
+    color: white;
+    border-color: var(--yellow);
+    box-shadow: 0 0 0 0.2rem rgba(255, 204, 0, 0.15);
+}
+
+.form-control::placeholder {
+    color: #aaa;
+}
+
+.cart-row {
+    background: var(--panel);
+    border: 1px solid #383838;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.cart-thumb {
+    width: 90px;
+    height: 100px;
+    object-fit: contain;
+    background: white;
+    border-radius: 6px;
+}
+
+.footer {
+    margin-top: 40px;
+    padding: 30px 15px;
+    text-align: center;
+    background: #050505;
+    border-top: 2px solid var(--red);
+    color: #ccc;
+}
+
+.footer p:first-child {
+    color: var(--yellow);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 40px 0;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .product-image {
+        height: 230px;
+    }
+
+    .navbar-brand {
+        font-size: 19px;
+    }
+}
